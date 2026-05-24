@@ -10,10 +10,24 @@
     --green: #008F51;
 }
 
+*,
+*::after,
+*::before {
+box-sizing: border-box;
+}
+
 body {
     font-family: "Arimo", sans-serif;
-    background-color: var(--primary-bg);
     color: var(--text-color);
+
+    margin: 0;
+    padding: 0;
+
+    overflow-x: hidden;
+}
+
+button {
+    transition: 0.3s ease;
 }
 
 .navbar {
@@ -24,14 +38,35 @@ body {
     padding: 1rem 1.5rem;
 
     background-color: var(--primary-bg);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    width: 390px;
+    height: 68px;
+
+    z-index: 1000;
+
+    border-bottom: 1px solid var(--text-color);
 }
 
 .menu-button {
     border: none;
     background: none;
 
-    font-size: 1.5rem;
+    font-size: 1.8rem;
+
+    color: var(--text-color);
+
     cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+.menu-button:hover {
+    opacity: 0.4;
 }
 
 .logo {
@@ -44,6 +79,8 @@ body {
 .cart-button {
     border: none;
 
+    font-size: 0.8rem;
+
     width: 28px;
     height: 28px;
 
@@ -53,4 +90,139 @@ body {
     color: white;
 
     cursor: pointer;
+}
+
+.cart-button:hover {
+    opacity: 0.8;
+}
+
+.hero-section {
+    height: 579px;
+
+    background-image: url("./images/hero-image.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    position: relative;
+}
+
+.hero-overlay {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+.hero-logo {
+    font-family: "Frank Ruhl Libre", serif;
+    font-size: 75px;
+    font-weight: 300;
+
+    color: white;
+
+    margin: 0;
+}
+
+.hero-line {
+    width: 1px;
+    height: 239px;
+
+    background-color: white;
+
+    margin: 12px 0;
+}
+
+.hero-text {
+    font-family: "Arimo", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+
+    color: white;
+
+    text-align: center;
+
+    line-height: 1.2;
+
+    margin: 0;
+}
+
+/* Information section */
+
+.info-cards {
+    background-color: #f5f5f5;
+}
+
+.info-card {
+    padding: 48px 32px;
+    text-align: center;
+}
+
+.info-card h3 {
+    font-family: "Arimo", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+
+    text-transform: uppercase;
+
+    line-height: 1.1;
+
+    margin-bottom: 12px;
+}
+
+.info-card p {
+    font-family: "Frank Ruhl Libre", serif;
+    font-size: 16px;
+
+    color: #444;
+
+    line-height: 1.4;
+}
+
+.info-image {
+    width: 100%;
+    height: 250px;
+
+    object-fit: cover;
+
+    border-radius: 4px;
+
+    margin: 32px 0;
+}
+
+.primary-button {
+    width: 100%;
+    height: 44px;
+
+    background-color: #dc4131;
+
+    border: none;
+    border-radius: 4px;
+
+    color: white;
+
+    font-family: "Arimo", sans-serif;
+    font-size: 16px;
+
+    cursor: pointer;
+
+    margin-top: 24px;
+}
+
+.primary-button:hover {
+    background-color: #ae2e21;
+}
+
+.info-divider {
+    width: calc(100% - 64px);
+    height: 1px;
+
+    background-color: #777;
+
+    margin: 0 auto;
 }
