@@ -1,0 +1,56 @@
+:root {
+    --primary-bg: #F7F2DE;
+    --text-color: #0B0A08;
+    --secondary-text: #FFFFFF;
+
+    --red-button: #DC4131;
+    --red-hover: #AE2E21;
+
+    --light-blue: #E1EAF0;
+    --green: #008F51;
+}
+
+body {
+    font-family: "Arimo", sans-serif;
+    background-color: var(--primary-bg);
+    color: var(--text-color);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 1rem 1.5rem;
+
+    background-color: var(--primary-bg);
+}
+
+.menu-button {
+    border: none;
+    background: none;
+
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.logo {
+    font-family: "Frank Ruhl Libre", serif;
+    font-weight: 300;
+
+    font-size: 2rem;
+}
+
+.cart-button {
+    border: none;
+
+    width: 28px;
+    height: 28px;
+
+    border-radius: 50%;
+
+    background-color: var(--green);
+    color: white;
+
+    cursor: pointer;
+}
