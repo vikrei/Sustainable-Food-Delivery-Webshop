@@ -152,7 +152,13 @@ button {
     margin: 0;
 }
 
-/* Information section */
+/* 
+
+
+Information section 
+
+
+*/
 
 .info-cards {
     background-color: #f5f5f5;
@@ -226,3 +232,267 @@ button {
 
     margin: 0 auto;
 }
+
+/* 
+
+
+How it works section 
+
+
+*/
+
+.how-it-works {
+    background-color: #f7f2de;
+
+    border-top: 1px solid #777;
+    border-bottom: 1px solid #777;
+}
+
+.how-header {
+    height: 170px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-bottom: 1px solid #777;
+}
+
+.how-header h2 {
+    font-family: "Arimo", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+
+    text-transform: uppercase;
+
+    text-align: center;
+
+    line-height: 1.1;
+}
+
+.how-step {
+    min-height: 207px;
+
+    padding: 45px;
+
+    border-bottom: 1px solid #777;
+}
+
+.how-step:last-child {
+    border-bottom: none;
+}
+
+.how-step h3 {
+    font-family: "Arimo", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+
+    text-transform: uppercase;
+
+    margin-bottom: 45px;
+}
+
+.how-step p {
+    font-family: "Arimo", sans-serif;
+    font-size: 16px;
+
+    line-height: 1.2;
+
+    margin-bottom: 24px;
+}
+
+.how-step a {
+    font-family: "Arimo", sans-serif;
+    font-size: 16px;
+
+    color: #555;
+}
+
+/* 
+
+
+Popular products section 
+
+
+*/
+
+.popular-produce {
+    padding-top: 90px;
+    padding-left: 37px;
+
+    overflow: hidden;
+}
+
+.popular-produce h2 {
+    font-family: "Arimo", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+
+    text-transform: uppercase;
+
+    margin-bottom: 37px;
+}
+
+.products-row {
+    display: flex;
+    gap: 24px;
+}
+
+.product-card {
+    flex-shrink: 0;
+
+    width: 250px;
+}
+
+.product-card img {
+    width: 250px;
+    height: 321px;
+
+    object-fit: cover;
+
+    border-radius: 4px;
+}
+
+.product-image-wrapper {
+    position: relative;
+}
+
+.basket-button {
+    position: absolute;
+
+    right: 8px;
+    bottom: 8px;
+
+    height: 31px;
+
+    padding: 0 14px;
+
+    border: none;
+    border-radius: 999px;
+
+    background-color: black;
+
+    color: white;
+
+    font-family: "Arimo", sans-serif;
+    font-size: 16px;
+
+    cursor: pointer;
+}
+
+.product-info {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 20px;
+}
+
+.product-info h3,
+.product-info span,
+.product-card p {
+    font-family: "Arimo", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.product-card p {
+    margin-top: 12px;
+}
+
+/* 
+
+
+FOOTER
+
+
+*/
+
+.footer {
+    background-color: #dc4131;
+
+    padding-top: 40px;
+    padding-right: 31px;
+    padding-bottom: 57px;
+    padding-left: 31px;
+}
+
+.footer-logo {
+    font-family: "Frank Ruhl Libre", serif;
+    font-size: 62px;
+    font-weight: 300;
+
+    color: white;
+
+    margin-bottom: 24px;
+}
+
+.footer-line {
+    width: 100%;
+    height: 1px;
+
+    background-color: rgba(255, 255, 255, 0.5);
+
+    margin-bottom: 45px;
+}
+
+.footer-title {
+    font-family: "Arimo", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+
+    text-transform: uppercase;
+
+    color: white;
+
+    margin-bottom: 45px;
+}
+
+.footer-text {
+    font-family: "Frank Ruhl Libre", serif;
+    font-size: 16px;
+    line-height: 1.4;
+
+    color: white;
+
+    max-width: 279px;
+
+    margin-bottom: 45px;
+}
+
+.newsletter-form {
+    display: flex;
+    flex-direction: column;
+
+    gap: 12px;
+}
+
+.newsletter-form input {
+    width: 100%;
+    height: 44px;
+
+    border: none;
+    border-radius: 4px;
+
+    padding: 0 16px;
+
+    font-family: "Arimo", sans-serif;
+    font-size: 16px;
+}
+
+.newsletter-form button {
+    width: 100%;
+    height: 44px;
+
+    border: none;
+    border-radius: 4px;
+
+    background-color: #dfe6eb;
+
+    font-family: "Arimo", sans-serif;
+    font-size: 16px;
+
+    cursor: pointer;
+
+    margin-top: 8px;
+}
+
