@@ -1,0 +1,451 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+main {
+    padding-top: 68px;
+}
+
+body {
+    margin: 0;
+
+    font-family: "Arimo", sans-serif;
+
+    background-color: #f7f2de;
+
+    color: #0b0a08;
+}
+
+.navbar {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    height: 68px;
+
+    padding: 0 24px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: #f7f2de;
+
+    border-bottom: 1px solid #0b0a08;
+
+    z-index: 1000;
+}
+
+.menu-button {
+    border: none;
+
+    background: none;
+
+    font-size: 28px;
+
+    padding: 0;
+
+    cursor: pointer;
+
+    color: #0b0a08;
+}
+
+.logo {
+    margin: 0;
+
+    font-family: "Frank Ruhl Libre", serif;
+
+    font-size: 30px;
+
+    font-weight: 300;
+
+    color: #0b0a08;
+}
+
+.cart-button {
+    width: 33px;
+    height: 33px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background-color: #00a651;
+
+    color: #0b0a08;
+
+    font-size: 14px;
+
+    cursor: pointer;
+}
+
+/* 
+
+
+POPUP MENU
+
+
+*/
+
+.mobile-menu {
+    position: fixed;
+
+    top: 0;
+    left: -100%;
+
+    width: 100%;
+    height: 100vh;
+
+    background-color: #008f51;
+
+    z-index: 2000;
+
+    transition: left 0.3s ease;
+}
+
+.mobile-menu.active {
+    left: 0;
+}
+
+.mobile-menu-header {
+    height: 68px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-bottom: 1px solid black;
+
+    position: relative;
+}
+
+.close-menu-button {
+    position: absolute;
+
+    left: 31px;
+
+    background: none;
+    border: none;
+
+    font-size: 32px;
+
+    cursor: pointer;
+}
+
+.mobile-menu-logo {
+    font-family: "Frank Ruhl Libre", serif;
+    font-size: 48px;
+    font-weight: 300;
+}
+
+.mobile-menu-links {
+    margin-top: 120px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 20px;
+}
+
+.mobile-menu-links a,
+.checkout-link {
+    font-family: "Arimo", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+
+    text-decoration: none;
+
+    color: black;
+}
+
+.checkout-link {
+    position: absolute;
+
+    bottom: 80px;
+
+    width: 100%;
+
+    text-align: center;
+}
+
+/*
+
+
+
+PRODUCTS PAGE
+
+
+
+*/
+
+.products-hero {
+    padding: 70px 24px 50px;
+}
+
+.products-hero h2 {
+    margin: 0 0 28px;
+
+    font-family: "Arimo", sans-serif;
+
+    font-size: 24px;
+
+    font-weight: 400;
+
+    text-transform: uppercase;
+}
+
+.products-hero p {
+    margin: 0;
+
+    font-family: "Arimo", sans-serif;
+
+    font-size: 16px;
+
+    line-height: 1.4;
+}
+
+.products-grid {
+    padding: 0 24px 80px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 40px;
+}
+
+.product-card {
+    width: 100%;
+}
+
+.product-image-wrapper {
+    position: relative;
+}
+
+.product-image-wrapper img {
+    width: 100%;
+
+    height: 345px;
+
+    object-fit: cover;
+
+    border-radius: 16px;
+
+    display: block;
+}
+
+.basket-button {
+    position: absolute;
+
+    font-family: "Arimo", sans-serif;
+
+    right: 16px;
+    bottom: 16px;
+
+    border: none;
+
+    background-color: black;
+
+    color: white;
+
+    border-radius: 999px;
+
+    padding: 12px 18px;
+
+    font-size: 14px;
+
+    cursor: pointer;
+}
+
+.product-info {
+    margin-top: 18px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-info h3 {
+    margin: 0;
+
+    font-family: "Arimo", sans-serif;
+
+    font-size: 18px;
+
+    font-weight: 400;
+}
+
+.product-info span {
+    font-family: "Arimo", sans-serif;
+
+    font-size: 18px;
+
+    font-weight: 400;
+}
+
+.product-weight {
+    margin-top: 12px;
+
+    font-family: "Frank Ruhl Libre", serif;
+
+    font-size: 16px;
+
+    font-weight: 300;
+
+    color: #4f4f4f;
+}
+
+.farm-link-section {
+    height: 146px;
+
+    border-top: 1px solid #0b0a08;
+    border-bottom: 1px solid #0b0a08;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.farm-link-section h2 {
+    width: 270px;
+
+    margin: 0;
+
+    font-family: "Arimo", sans-serif;
+
+    font-size: 24px;
+
+    font-weight: 400;
+
+    text-transform: uppercase;
+
+    text-align: center;
+
+    line-height: 1.2;
+}
+
+.map-section {
+    padding: 0 25px 45px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.map-section iframe {
+    width: 340px;
+
+    height: 459px;
+
+    border: none;
+
+    border-radius: 16px;
+}
+
+.footer {
+    background-color: #dc4131;
+
+    padding: 34px 16px 60px;
+}
+
+.footer-content {
+    width: 100%;
+}
+
+.footer-logo {
+    margin: 0;
+
+    font-family: "Frank Ruhl Libre", serif;
+
+    font-size: 62px;
+
+    font-weight: 300;
+
+    color: white;
+}
+
+.footer-line {
+    width: 100%;
+
+    height: 1px;
+
+    background-color: rgba(255, 255, 255, 0.5);
+
+    margin: 32px 0 54px;
+}
+
+.footer-title {
+    margin: 0 0 52px;
+
+    font-family: "Arimo", sans-serif;
+
+    font-size: 24px;
+
+    font-weight: 400;
+
+    color: white;
+}
+
+.footer-text {
+    width: 279px;
+
+    margin: 0 0 44px;
+
+    font-family: "Frank Ruhl Libre", serif;
+
+    font-size: 16px;
+
+    font-weight: 300;
+
+    line-height: 1.4;
+
+    color: white;
+}
+
+.newsletter-form {
+    display: flex;
+    flex-direction: column;
+
+    gap: 16px;
+}
+
+.newsletter-form input {
+    width: 100%;
+
+    height: 44px;
+
+    border: none;
+
+    border-radius: 4px;
+
+    padding: 0 14px;
+
+    font-family: "Arimo", sans-serif;
+
+    font-size: 16px;
+}
+
+.email-input-wrapper {
+    position: relative;
+}
+
+.email-input-wrapper button {
+    position: absolute;
+
+    right: 14px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    border: none;
+
+    background: none;
+
+    font-size: 24px;
+
+    cursor: pointer;
+}

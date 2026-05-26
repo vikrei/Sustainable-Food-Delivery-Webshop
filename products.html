@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products Page</title>
+    <link rel="stylesheet" href="products.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&family=Frank+Ruhl+Libre:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&family=Frank+Ruhl+Libre:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>    
+        <nav class="navbar">
+            <button class="menu-button">
+                ☰
+            </button>
+            <h1 class="logo">
+                FRAM
+            </h1>
+            <button class="cart-button">
+                0
+            </button>
+        </nav>
+    </header>
+    <div class="mobile-menu">
+        <div class="mobile-menu-header">
+            <button class="close-menu-button">
+                ✕
+            </button>
+            <h2 class="mobile-menu-logo">
+                FRAM
+            </h2>
+        </div>
+        <nav class="mobile-menu-links">
+            <a href="products.html">PRODUCTS</a>
+            <a href="chatbot.html">CHAT</a>
+        </nav>
+        <a class="checkout-link" href="#">
+            CHECKOUT
+        </a>
+    </div>
+    <main>
+        <section class="products-hero">
+            <h2>
+                PRODUCE
+            </h2>
+            <p>
+                Explore our selection of seasonal produce,
+                sourced directly from local farms to ensure
+                peak freshness and quality. Every item is
+                chosen with care, supporting sustainable
+                practices and bringing the best of the
+                harvest to your table
+            </p>
+        </section>
+        <section class="products-grid">
+            <article class="product-card">
+                <div class="product-image-wrapper">
+                    <img src="images/oats.png" alt="Oats">
+                    <button class="basket-button">
+                        Add to basket ↑
+                    </button>
+                </div>
+                <div class="product-info">
+                    <h3>Oats</h3>
+                    <span>16 kr / kg</span>
+                </div>
+                <p class="product-weight">
+                    1 kg
+                </p>
+            </article>
+            <article class="product-card">
+                <div class="product-image-wrapper">
+                    <img src="images/onions.png" alt="Red onions">
+                    <button class="basket-button">
+                        Add to basket ↑
+                    </button>
+                </div>
+                <div class="product-info">
+                    <h3>Red onions</h3>
+                    <span>45 kr / kg</span>
+                </div>
+                <p class="product-weight">
+                    0.5 kg
+                </p>
+            </article>
+            <article class="product-card">
+                <div class="product-image-wrapper">
+                    <img src="images/garlic.png" alt="Garlic">
+                    <button class="basket-button">
+                        Add to basket ↑
+                    </button>
+                </div>
+                <div class="product-info">
+                    <h3>Garlic</h3>
+                    <span>48 kr / kg</span>
+                </div>
+                <p class="product-weight">
+                    0.2 kg
+                </p>
+            </article>
+            <article class="product-card">
+                <div class="product-image-wrapper">
+                    <img src="images/potatoes.png" alt="Potatoes">
+                    <button class="basket-button">
+                        Add to basket ↑
+                    </button>
+                </div>
+                <div class="product-info">
+                    <h3>Potatoes</h3>
+                    <span>32 kr / kg</span>
+                </div>
+                <p class="product-weight">
+                    1 kg
+                </p>
+            </article>
+            <article class="product-card">
+                <div class="product-image-wrapper">
+                    <img src="images/carrots.png" alt="Carrots">
+                    <button class="basket-button">
+                        Add to basket ↑
+                    </button>
+                </div>
+                <div class="product-info">
+                    <h3>Carrots</h3>
+                    <span>48 kr / kg</span>
+                </div>
+                <p class="product-weight">
+                    Gård
+                </p>
+            </article>
+        </section>
+        <section class="farm-link-section">
+            <h2>
+                SEE OUR PARTNERING
+                FARMS
+            </h2>
+        </section>
+        <section class="map-section">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1976.5632094538332!2d10.635822100000002!3d60.3037505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4641a30c3be67c59%3A0x94dbad789ad47bba!2sBraastad%20Gaard!5e0!3m2!1sen!2sno!4v1779747119342!5m2!1sen!2sno" 
+                    width="600" 
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </section>
+        <footer class="footer">
+            <div class="footer-content">
+                <h2 class="footer-logo">
+                    FRAM
+                </h2>
+                <div class="footer-line"></div>
+                <h3 class="footer-title">
+                    STAY UPDATED
+                </h3>
+                <p class="footer-text">
+                    Sign up for our newsletter to be the first
+                    to know about new produce or other
+                    exciting news!
+                </p>
+                <form class="newsletter-form">
+                    <input
+                        type="text"
+                        placeholder="First name"
+                    >
+                    <div class="email-input-wrapper">
+                        <input
+                            type="email"
+                            placeholder="E-mail address"
+                        >
+                        <button type="submit">
+                            →
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </footer>
+        <script src="script.js"></script>
+    </main>
+</body>
+</html>

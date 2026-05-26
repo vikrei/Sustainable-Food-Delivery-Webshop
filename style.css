@@ -30,6 +30,14 @@ button {
     transition: 0.3s ease;
 }
 
+/* 
+
+
+NAVBAR
+
+
+*/
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -95,6 +103,14 @@ button {
 .cart-button:hover {
     opacity: 0.8;
 }
+
+/* 
+
+
+POPUP MENU
+
+
+*/
 
 .mobile-menu {
     position: fixed;
@@ -177,6 +193,14 @@ button {
 
     text-align: center;
 }
+
+/* 
+
+
+HERO SECTION
+
+
+*/
 
 .hero-section {
     height: 579px;
