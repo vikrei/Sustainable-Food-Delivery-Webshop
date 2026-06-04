@@ -24,4 +24,4 @@ Known Limitations
 The chatbot uses the DummyJSON API for demonstration purposes. The data returned by the API may not match the products displayed on the website. The API may also become unavailable or return outdated information.
 
 Future Improvements
-Add functioning cart and ordering flow.
+Add functioning cart and ordering flow
