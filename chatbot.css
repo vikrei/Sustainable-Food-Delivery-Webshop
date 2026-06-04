@@ -27,6 +27,102 @@ body {
 
 }
 
+/* 
+
+
+POPUP MENU
+
+
+*/
+
+.mobile-menu {
+    position: fixed;
+
+    top: 0;
+    left: -100%;
+
+    width: 100%;
+    height: 100vh;
+
+    background-color: #008f51;
+
+    z-index: 2000;
+
+    transition: left 0.3s ease;
+}
+
+.mobile-menu.active {
+    left: 0;
+}
+
+.mobile-menu-header {
+    height: 68px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-bottom: 1px solid black;
+
+    position: relative;
+}
+
+.close-menu-button {
+    position: absolute;
+
+    left: 31px;
+
+    background: none;
+    border: none;
+
+    font-size: 32px;
+
+    cursor: pointer;
+}
+
+.mobile-menu-logo {
+    font-family: "Frank Ruhl Libre", serif;
+    font-size: 48px;
+    font-weight: 300;
+}
+
+.mobile-menu-links {
+    margin-top: 120px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 20px;
+}
+
+.mobile-menu-links a,
+.checkout-link {
+    font-family: "Arimo", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+
+    text-decoration: none;
+
+    color: black;
+}
+
+.checkout-link {
+    position: absolute;
+
+    bottom: 80px;
+
+    width: 100%;
+
+    text-align: center;
+}
+
+/*
+
+NAVBAR
+
+*/
+    
 .navbar {
 
     width: 100%;
@@ -219,4 +315,90 @@ body {
 
     text-align: center;
 
+}
+
+@media screen and (min-width: 1024px) {
+
+    .chat-page {
+        padding-top: 68px;
+
+        min-height: 100vh;
+
+        background-image: url("./images/hero-image.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .chat-container {
+        width: 508px;
+        height: 716px;
+
+        background-color: white;
+
+        border-radius: 16px;
+
+        overflow: hidden;
+
+        display: flex;
+        flex-direction: column;
+
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+    }
+
+    .chat-messages {
+        padding: 24px;
+
+        flex: 1;
+    }
+
+    .chat-input-section {
+        padding: 16px;
+    }
+
+    .mobile-menu {
+        width: 475px;
+
+        height: 100vh;
+
+        top: 0px;
+
+        left: -475px;
+    }
+
+    .mobile-menu.active {
+        left: 0;
+    }
+
+    .mobile-menu-links {
+        margin-top: 220px;
+        gap: 28px;
+    }
+
+    .mobile-menu-links a,
+    .checkout-link {
+        font-size: 24px;
+    }
+
+    .checkout-link {
+        bottom: 120px;
+    }
+
+    .close-menu-button {
+        font-size: 24px;
+        left: 18px;
+        top: 10px;
+    }
+
+    .mobile-menu-header {
+        height: 40px;
+    }
+
+    .mobile-menu-logo {
+        display: none;
+    }
 }

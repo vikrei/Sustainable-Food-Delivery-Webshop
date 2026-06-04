@@ -1,6 +1,6 @@
 console.log("script connected");
 
-// MOBILE MENU
+                                                                // MOBILE MENU
 
 const menuButton = document.querySelector(".menu-button");
 
@@ -75,7 +75,7 @@ document.addEventListener("keydown", (event) => {
 
 });
 
-// CHATBOT API
+                                                            // CHATBOT API
 
 const sendButton =
     document.querySelector(".send-button");
@@ -110,7 +110,7 @@ async function sendMessage() {
     try {
 
         const response = await fetch(
-            "https://jsonplaceholder.typicode.com/posts/1"
+            "https://dummyjson.com/products"
         );
 
         if (!response.ok) {
@@ -119,14 +119,28 @@ async function sendMessage() {
 
         }
 
-        await response.json();
+        const data = await response.json();
 
         let botReply = "";
 
         const message =
             userMessage.toLowerCase();
 
-        if (message.includes("order")) {
+            if (
+        message.includes("help")) {
+
+        botReply =
+            "Available commands:\n\n" +
+            "• order\n" +
+            "• delivery\n" +
+            "• farm\n" +
+            "• container\n" +
+            "• reuse\n" +
+            "• product";
+
+        }
+
+        else if (message.includes("order")) {
 
             botReply =
                 "To order products, visit the Products page and add items to your basket.";
@@ -160,6 +174,16 @@ async function sendMessage() {
                 "Customers can return containers during the next delivery for reuse.";
 
         }
+
+        else if (
+            message.includes("product")
+        ) {
+
+            botReply =
+                `We currently have ${data.total} products available in our catalogue.`;
+
+        }
+
 
         else {
 
@@ -233,3 +257,87 @@ function addErrorMessage() {
     );
 
 }
+
+// NEWSLETTER VALIDATION
+
+const newsletterForm =
+    document.querySelector(".newsletter-form");
+
+if (newsletterForm) {
+
+    newsletterForm.addEventListener(
+        "submit",
+        (event) => {
+
+            event.preventDefault();
+
+            const nameInput =
+                newsletterForm.querySelector(
+                    'input[type="text"]'
+                );
+
+            const emailInput =
+                newsletterForm.querySelector(
+                    'input[type="email"]'
+                );
+
+            const name =
+                nameInput.value.trim();
+
+            const email =
+                emailInput.value.trim();
+
+            const emailPattern =
+                /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+            if (!name) {
+
+                alert(
+                    "Please enter your name."
+                );
+
+                return;
+
+            }
+
+            if (
+                !emailPattern.test(email)
+            ) {
+
+                alert(
+                    "Please enter a valid email address."
+                );
+
+                return;
+
+            }
+
+            alert(
+                "Thank you for subscribing!"
+            );
+
+            newsletterForm.reset();
+
+        }
+    );
+
+}
+
+class ChatBot {
+
+    constructor(name) {
+
+        this.name = name;
+
+    }
+
+    getWelcomeMessage() {
+
+        return `Welcome to ${this.name}`;
+
+    }
+
+}
+
+const framBot =
+    new ChatBot("FRAM");
